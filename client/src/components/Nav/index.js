@@ -7,7 +7,7 @@ function Nav() {
         <ul className="nav nav-tabs">
             <li className="nav-item">
                 <Link to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>
-                    Google Books
+                    Google Bookworm
             </Link>
             </li>
             <li className="nav-item">

@@ -1,7 +1,7 @@
 {
-  "name": "google-books-search",
+  "name": "google_bookworm",
   "version": "0.1.0",
-  "description": "Google Books Search",
+  "description": "Google Books Search Application",
   "private": true,
   "proxy": "http://localhost:3001/",
   "dependencies": {

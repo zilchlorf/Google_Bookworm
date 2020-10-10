@@ -5,15 +5,15 @@ import API from "../../utils/API";
 import DeleteBtn from "../DeleteBtn"
 import "./style.css"
 
-// BookList renders a bootstrap list item
+
 export function BookList({ children }) {
     return <ul className="list-group">{children}</ul>;
 };
 
-// component to render each book
+
 export function BookListItem(props) {
 
-    // function to handle saving book to db when save button is clicked
+
     const handleSaveBtn = event => {
 
         API.saveBook({
@@ -30,12 +30,11 @@ export function BookListItem(props) {
             )
     };
 
-    // function to handle deleting book from db when delete button is clicked
+ 
     const handleDeleteBtn = event => {
         API.deleteBook(props.id)
             .then(
                 res => {
-                    // use loadBooks prop from Saved page component
                     props.loadBooks()
                     console.log(props.id)
                 }
@@ -57,7 +56,6 @@ export function BookListItem(props) {
                             {props.description}
                         </p>
 
-                        {/* if there is an object id render the SaveBtn component else render the DeleteBtn component */}
                         {!props.id ?
                             <SaveBtn
                                 type="success"

@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Google Bookworm",
+  "name": "Google Bookworm search and save app",
   "icons": [
     {
       "src": "favicon.ico",
